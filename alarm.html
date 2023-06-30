@@ -1,0 +1,58 @@
+<html>
+<title>
+</title>
+<head>
+
+</head>
+<link rel="stylesheet" href="al.css">
+<body>
+    
+    <div class="center">
+            <div>
+                <!-- Display the REAL time -->
+                <h2 id="realtime"></h2>
+
+                <!-- Select time of the alarm to be set(for new alarm) -->
+                <div class="alarmtimebody">
+                    <label>
+                        <div>
+                            <select class="tie" id="hr"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="tme" id="min"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="tme" id="sec"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="tie" id="ampm"></select>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Add new alarm, it will also add it to the recent list of alarm -->
+            <button id="setButton">Set Alarm</button>
+
+            <!-- Clear button to stop the alarm sound after it starts ringing -->
+            <button id="setClear">Clear Alarm</button>
+
+            <div>
+                
+                <!-- Here will be the list of all recent alarm set by the user -->
+                <ul id="incomplete-alarms">
+
+                </ul>
+            </div>
+
+    </div>
+
+    <script src="in.js"></script>
+</body>
+</html>
